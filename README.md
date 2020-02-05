@@ -1,6 +1,55 @@
 # thesis-prep
  map698 
 
+***Do you know what you want to be when you grow up? I.e., how do you see this final project fitting with your current job/career track? Or are you looking for a career change? Please explain.***
+
+This project could link back to my undergraduate degree (BS in landscape architecture), where I worked to create developmental strategies related to community-based decision-making regarding proposed land use planning at the county level...
+
+I could go describe a number of maps and paths to embark upon, but ideally the end goal is that I've got a slick webmap that represents an array of skills that I'll use to find a way to work remotely doing some combo of the hats I've worn for the past 15 years: landscape architect, planner, construction manager, graphic designer, strategic analyst, operations manager, etc. 
+
+***What data and/or mapping skills are you looking to learn or improve upon within this course and the final mapping project process?***
+
+I would like to create webmap that has: 
+- rich, immersive data 
+- useful/practical applications
+- dataset processed on the fly 
+- resilient, flexible code
+- interest and relevance
+
+***Anything else you'd like to share with your instructor? Concerns, questions, confessions?***
+I'm a little terrified...but that's not new for me starting a new class, and I  have some good directions to move in and some flexibility with my schedule.  
+
+FYI I hope its not an issue but I'm on Family Medical Leave from work due to a seizure.  Should have more time to work than in past few courses, but have to work around the health issues that put me on leave.  Keeping up will be key to minimizing stress and achieving positive outcomes.
+
+#### ***Nascent project topic ideas and datasets***
+##### A general statement as to your thinking for the final project
+
+I'd like to create a webmap that is: 
+- interesting/relevant
+- rich/immersive
+- useful/practical 
+- processed on the fly from "live" data
+- coded in a resilient/durable/flexible way
+
+
+A project concept I've had in mind is a  "What-if" scenario map that provides the user with a robust UI that allows for a tremendous range of user-generated "scenario maps". such as the well-maintained https://nuclearsecrecy.com/nukemap/
+
+A few ideas: 
+- ***land-use site-suitability matrix builder*** (community-based planning decision-making tool) where users could toggle on or off different desirable (proximity to park) or undesirable features (atop a sinkhole) to generate heatmaps. Such a map could scrape Openstreet for many features, allowing for a global solution.  
+- ***stormwater runoff explorer*** (how would development scenarios impact downstream water quality/quantity) / flood-risk visualizer
+
+
+
+
+
+
+
+
+
+##### 2 - 3 general topic ideas posted as bullet points
+
+##### A vague indication of where that data may come from 
+
 
 ```
 Final Project Stage 1: From interests to focused topics
