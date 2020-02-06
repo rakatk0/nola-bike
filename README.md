@@ -1,5 +1,5 @@
 
-There are two directions this thesis might take. 
+There are three directions this thesis might take. 
 
 ## 1. "Site-suitability matrix builder"
 
@@ -33,6 +33,8 @@ so that collaborations are captured
 
 ```
 i want to design an interactive map that visualizes aggregated user input from the above map 
+because I want others to share their ideas
+in order that everyone has a say.
 ```
 
 That's 5 maps, and all are significant undertakings, each with their own issues and sensitivities that must be addressed. Isolating one concept or experience
@@ -52,6 +54,12 @@ Recreating this data exporation and collection process via interactive webmap is
 # or
 
 ## 2. New Orleans Bicycle Map
+```
+i want to design exploratory and descriptive interactive maps that increase bicycle safety
+because I want others to have greater awareness of their environment when they travel by bike
+in order that everyone can be prepared
+```
+
 
 This project would have multiple facets: 
 - generate interactive maps of bicycle networks
@@ -79,9 +87,31 @@ Blue Bikes Rental Data: via their partnership with Bike Easy
 New Orleans is consistently updating their bicycle networks and entities such as Bike Easy have helped advocate for expanded awareness and infrastructure to support the Complete Streets movement. Maps could help to explain these efforts to residents, and expand awareness of a variety of factors.  
 
 
+# OR
 
+## Traffic Camera Citations 2008-2019 vs Louisiana Crash Data...maybe?
 
+```
+i want to explore a large dataset of citations
+because I want to find patterns and correlations with other events
+in order to understand the scale and estimate the of such implementations
+```
 
+4.5 million tickets were handed out in this time. Many have considered the actions of the city and its contractors to be illegal.  
+
+[NOLA traffic camera citations 2008-2019](https://data.nola.gov/Public-Safety-and-Preparedness/Traffic-Camera-Citations/va3u-jspg)
+Crash Data: [Louisiana Department of Transportation](ladot.gov)
+or
+[regional planning commission](norpc.org)
+
+Points: 
+Camera Locations, zip code centroids
+Edges:
+neighborhoods
+
+This has been a hot button topic in New Orleans since they were installed over a decade ago.  This dataset has location info for each camera, as well as offender zip code, and time of the offense making for an interesting look at where cars from wherever are speeding when!
+
+This could have an awesome animation and exploration interface, but would get a little boring without a timeline with historical events included, like when speed limits were changed or after notable newsworthy disabling.    
 
 
 
