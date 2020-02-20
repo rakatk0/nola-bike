@@ -3,11 +3,18 @@
 <!-- ### **Description of data topic** -->
 ## ```Description:```
 
-This project would have multiple facets:
+**What this is:** 
+This project is intended to be series of maps that will overview the bike network and allow for exploration of bike-related datasets of potential interest to the cycling community, public safety officials & policymakers, neighborhood associations and citizens.
+
+maps & exploratory tools
 
 - generate interactive maps of bicycle networks, past and present in the Greater New Orleans metro area.
 - explore traffic safety data & generate meaningful insights and data visualizations
-- explore city-wide bike-share program datasets & generate meaningful insights, communicated through interactive data visualizations. 
+- explore police incident reports for bike-thefts
+- exploratory toolset to peruse city-wide bike-share program datasets & generate meaningful insights, communicated through interactive data visualizations. 
+
+
+
 
 ### *map objectives*
 
@@ -17,9 +24,6 @@ This project would have multiple facets:
 ### user needs, articulated through a persona/scenario
 ### data sources
 
-
-
-## DATA STATUS
 ### **Existing bicycle infrastructure**: 
 city maintained lanes - [City of New Orleans Open Data Portal](https://data.nola.gov/Transportation-and-Infrastructure/Bike-Lanes/8npz-j6vy)
 
@@ -59,22 +63,22 @@ interactive map exploring existing and proposed conditions. Complete Streets is 
         - [Sewer & Water Board]()
         - [LA DOT]()
 
+<!-- *other connections:* integrate 3rd party crowdsource app api via Bike Easy?  -->
 
+**Traffic Incident Data:** 
 
-**Collision Data?**: 
-Format:  Windows Access Database
-Status:  Access pending. 
-
-
+Source: 
 [Louisiana Department of Transportation](ladot.gov)
 or
 [regional planning commission](norpc.org)
 
-### spatial analysis
+This dataset is typical of what most states maintain, and can be used to isolate certain types of incidents, such as those involving pedestrians and/or cyclists. 
+
+<!-- access to data is pending -->
+
 where are most dangerous intersections at what times of day?
 is there a streetlight correlation?
 is there a bike network correlation? 
-
 
 
 ## **Bike-Share Program  Data**
@@ -88,12 +92,10 @@ _Lines_: Routes
 
 As all bikes are gps-tracked, there is *alot* of route data being generated that could be analyzed for insights. 
 
-
 <!-- ** *disclaimer:* This data may not be available.  Access is pending.  Freedom of Information requests may help gain access ** -->
 
 **wrangling and analysis** 
-geopandas or d3 version of [Todd Schneider's R analysis]() 
-
+<!-- use bluebike data to figure out *where* to look.. -->
 
 - does this dataset represent the behavior of all cyclists in new orleans, or just a subset of those using bike share programs?  
 - What is the typical user of New Orleans bikeshare program?
@@ -107,17 +109,19 @@ geopandas or d3 version of [Todd Schneider's R analysis]()
 - Does this dataset represent the behavior of all cyclists in new orleans, or just a subset of those using bike share programs?  
 - What is the typical user of New Orleans bikeshare program?
 - What sort of patterns of movement exist around certain neighborhoods and districts, at certain times?
+- Ask the crowd: what's the the best way to get upriver/downriver,riverside/lakeside from user's location) 
+- look at the beaucoup festivals/parades and impacts of weather and road construction impacts on routes taken could be interesting...
 
 
 
-<!-- use bluebike data to figure out *where* to look..
+
 - bike network status? 
 - physical infrastructure 
 - accident history?
 - streetlight coverage?
 - correlation to proximity to traffic cameras? -->
 
-other connections: integrate 3rd party crowdsource app api via Bike Easy? 
+
 
 
 ### **Anticipated queries and other data thoughts:**
@@ -145,12 +149,23 @@ Maps could help to explain these efforts to residents, and expand awareness of a
 
 Variety of maps and dataset explorations:
 
-bike network map
+1. bike network map
+- relatively static
+- smaller datasets
 
-collision map
+2. collision map
+- will reference a static dataset
+- perform analysis browser-side?
+- large dataset (>30mb)
 
-bike share routes map 
-- could be constrained to just the animation?
+3. bike share usage maps 
+- explore busy routes (day vs night)
+- watch animation of routes
+- highlight high traffic spots
+- very large dataset (>1gb)
+
+
+
 
 **Basemap layers**:
 <!-- probably will build this out in mapbox studio -->
@@ -166,10 +181,33 @@ bike share routes map
 
 ### wireframes, paper prototypes, or mockups
 
-### Ethics/Critique
-**privacy?** 
-are individuals able to be identified from their trip signature or within the dataset?
+
+
+
+
+
+### **Ethics/Critique**
+
+**Maintaining Privacy** 
+
+Are individuals able to be identified from their trip signature or within the dataset?
+
 Do users know/care/expect that the bikes are tracked? 
+
+The bike share usage dataset could potentially identify individuals or groups and would have to be effectively "scrubbed" prior to any sort of publishing.  Additionally, access to this dataset may require an agreement with data providers as to how the results of any analysis may be presented. 
+  
+
+**working with 3rd party groups:**
+
+<!-- review notes w/ dan @ name of 3rd party app developers  -->
+
+**3rd party use of thesis deliverables:**
+Access to some datasets will be achieved through leveraging partnerships with local advocacy and planning groups.
+
+If insights inferred from spatial and temporal analysis of datasets can inform decision-making, or be used to determine effectiveness of policy-making (such as, impacts on public health, that would be an ideal outcome of this research and data presentation.
+
+*prominent disclaimer:* use this data and related analysis at your own risk! 
+
 
 
 
@@ -180,7 +218,9 @@ Do users know/care/expect that the bikes are tracked?
 - [City of New Orleans Data Portal]()
 - [Bike Easy NOLA](http://bikeeasy.org/)
 - [Regional Planning Commission](norpc.org)
-- [NOLA traffic camera citations 2008-2019](https://data.nola.gov/Public-Safety-and-Preparedness/Traffic-Camera-Citations/va3u-jspg)
+- 
+City of New Orleans Datasets
+[NOLA traffic camera citations 2008-2019](https://data.nola.gov/Public-Safety-and-Preparedness/Traffic-Camera-Citations/va3u-jspg)
 
 <!-- ## Connection to Traffic Camera Citations 2008-2019?
 
