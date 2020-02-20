@@ -16,15 +16,19 @@ maps & exploratory tools
 
 
 
-### *map objectives*
+## **map objectives**
 
 ### ```I want to design exploratory and descriptive interactive maps that increase bicycle safety ... because I want others to have greater awareness of their environment when they travel by bike in order that everyone can be prepared.```
 
-### *literature review*
-### user needs, articulated through a persona/scenario
-### data sources
 
-### **Existing bicycle infrastructure**: 
+
+
+## **user needs scenario**
+
+
+## **data sources**
+
+#### **Existing bicycle infrastructure**: 
 city maintained lanes - [City of New Orleans Open Data Portal](https://data.nola.gov/Transportation-and-Infrastructure/Bike-Lanes/8npz-j6vy)
 
 [Regional Planning Commission]()
@@ -159,13 +163,23 @@ Variety of maps and dataset explorations:
 - large dataset (>30mb)
 
 3. bike share usage maps 
-- explore busy routes (day vs night)
+- parse routes as tracings
 - watch animation of routes
 - highlight high traffic spots
-- very large dataset (>1gb)
+- potentially very large dataset (>5gb)
 
 
+**Technology Stack:**
 
+
+leaflet
+mapbox js
+mapbox studio
+
+torque.js
+turf.js
+
+hosting: 
 
 **Basemap layers**:
 <!-- probably will build this out in mapbox studio -->
@@ -177,14 +191,7 @@ Variety of maps and dataset explorations:
 <!-- - identification of anticipated thematic representation (e.g., dot map, choropleth, prop symbols, etc.)
 - description of the anticipated user interaction (UI) -->
 
-
-
 ### wireframes, paper prototypes, or mockups
-
-
-
-
-
 
 ### **Ethics/Critique**
 
@@ -195,9 +202,6 @@ Are individuals able to be identified from their trip signature or within the da
 Do users know/care/expect that the bikes are tracked? 
 
 The bike share usage dataset could potentially identify individuals or groups and would have to be effectively "scrubbed" prior to any sort of publishing.  Additionally, access to this dataset may require an agreement with data providers as to how the results of any analysis may be presented. 
-  
-
-**working with 3rd party groups:**
 
 <!-- review notes w/ dan @ name of 3rd party app developers  -->
 
@@ -209,18 +213,24 @@ If insights inferred from spatial and temporal analysis of datasets can inform d
 *prominent disclaimer:* use this data and related analysis at your own risk! 
 
 
+## **literature review**
+[Todd Schneider's R Analysis of Citibike Data]()
 
 
 
 
-
-## resources
+## Resources
 - [City of New Orleans Data Portal]()
 - [Bike Easy NOLA](http://bikeeasy.org/)
 - [Regional Planning Commission](norpc.org)
 - 
-City of New Orleans Datasets
-[NOLA traffic camera citations 2008-2019](https://data.nola.gov/Public-Safety-and-Preparedness/Traffic-Camera-Citations/va3u-jspg)
+City of New Orleans Datasets:
+- [NOLA traffic camera citations 2008-2019](https://data.nola.gov/Public-Safety-and-Preparedness/Traffic-Camera-Citations/va3u-jspg)
+- [bike lanes]()
+- [bike share hubs]()
+- [bike share service area]()
+- [neighborhoods]()
+
 
 <!-- ## Connection to Traffic Camera Citations 2008-2019?
 
