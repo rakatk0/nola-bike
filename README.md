@@ -1,15 +1,13 @@
 <!-- ### **Title** -->
-### **New Orleans Bike Map**
+# **New Orleans Bike Map**
 <!-- ### **Description of data topic** -->
-### ```Description of data topic```
+## ```Description:```
 
 This project would have multiple facets:
 
-- generate interactive maps of bicycle networks, past and present
+- generate interactive maps of bicycle networks, past and present in the Greater New Orleans metro area.
 - explore traffic safety data & generate meaningful insights and data visualizations
-- explore city-wide bicycle rental program datasets & generate meaningful insights and data visualizations
-
-Working with Bike Easy, an established non-profit in New Orleans, I would have access to a significant amount of data. The city-wide bicycle data would be a trove of location data over the past few years of the city-approved bicycle rental network.
+- explore city-wide bike-share program datasets & generate meaningful insights, communicated through interactive data visualizations. 
 
 ### *map objectives*
 
@@ -44,7 +42,7 @@ interactive map exploring existing and proposed conditions. Complete Streets is 
 
 - amenities (points)
     - [parking racks/locations](https://data.nola.gov/Transportation-and-Infrastructure/Bicycle-Parking-Locations/atfa-cmev)
-    - bike repair stations
+    - bike repair stations 
     - [bike share stations](https://data.nola.gov/Transportation-and-Infrastructure/Bike-Share-Stations/3het-ycdr)
     - bike shops/non-profits
 - transit connections (lines)
@@ -63,7 +61,12 @@ interactive map exploring existing and proposed conditions. Complete Streets is 
 
 
 
-**Collision Data?**: [Louisiana Department of Transportation](ladot.gov)
+**Collision Data?**: 
+Format:  Windows Access Database
+Status:  Access pending. 
+
+
+[Louisiana Department of Transportation](ladot.gov)
 or
 [regional planning commission](norpc.org)
 
@@ -77,51 +80,56 @@ is there a bike network correlation?
 ## **Bike-Share Program  Data**
 ### **Blue Bikes Usage Data**: 
 
-Points: Bike Share Hubs
+_Points_: Bike Share Hubs
 
-Polygons: Service Area, Other areas
+_Polygons_: Service Area, Other areas
 
-Lines: Routes
+_Lines_: Routes
 
-As all bikes are gps-tracked, there is alot of route data being generated that could be analyzed for insights. 
+As all bikes are gps-tracked, there is *alot* of route data being generated that could be analyzed for insights. 
 
-- What is average time/distance/speed of trip?
-- What are the most trafficked roads? 
-- What areas are most underserved by this program?
-are there enough bikes/hubs, etc?
-- Does this dataset represent the behavior of all cyclists in new orleans, or just a subset of those using bike share programs?  
-- What is the typical user of New Orleans bikeshare program?
-- What sort of patterns of movement exist around certain neighborhoods and districts, at certain times?
 
 <!-- ** *disclaimer:* This data may not be available.  Access is pending.  Freedom of Information requests may help gain access ** -->
+
 **wrangling and analysis** 
 geopandas or d3 version of [Todd Schneider's R analysis]() 
 
 
-does this dataset represent the behavior of all cyclists in new orleans, or just a subset of those using bike share programs?  
-What is the typical user of New Orleans bikeshare program?
-What is the typical New Orleans bicyclist?
-What sort of patterns of movement exist around certain neighborhoods and districts, at certain times?
+- does this dataset represent the behavior of all cyclists in new orleans, or just a subset of those using bike share programs?  
+- What is the typical user of New Orleans bikeshare program?
+- What sort of patterns of movement exist around certain neighborhoods and districts, at certain times?
+- Bike share network users? tourist vs local? where do rides originate and end? can this be determined? 
+- Bikeshare area - sufficient?  how many bikes leave the area?
+- are there enough bikes/hubs, etc?
+- What is average time/distance/speed of trip?
+- What are the most trafficked roads? 
+- What areas are most underserved by this program?
+- Does this dataset represent the behavior of all cyclists in new orleans, or just a subset of those using bike share programs?  
+- What is the typical user of New Orleans bikeshare program?
+- What sort of patterns of movement exist around certain neighborhoods and districts, at certain times?
 
 
-use bluebike data to figure out *where* to look..
+
+<!-- use bluebike data to figure out *where* to look..
 - bike network status? 
 - physical infrastructure 
 - accident history?
 - streetlight coverage?
-- correlation to proximity to traffic cameras?
+- correlation to proximity to traffic cameras? -->
 
 other connections: integrate 3rd party crowdsource app api via Bike Easy? 
 
 
 ### **Anticipated queries and other data thoughts:**
 #### how to explore new orleans bicycling with data analysis?
-New Orleans is a mostly flat experience for bicyclists, without much grade change.  
+
+do these datasets characterize the typical new orleans bike network user?  
+
+
 - flatness?...average grade change on ride vs other cities...bring in elevation data to visualize cross sections? 
 - compact grids .... always a parallel alternative? A,B,C routes...look at similar trips with different routes...where does this breakout of bike network?
 - weather - look at correlation between rainy days and bluebike usage? rainy days and avoidance of certain roadways/intersections? [historic weather data](wunderground.org)
-- Bike Betwork users? tourist vs local? where do rides originate and end? can this be determined? 
-- Bikeshare area - sufficient?  how many bikes leave the area?  
+ 
 - lotsa crowds, parades and festivals...how does Mardi Gras affect biking?
 
 
@@ -142,7 +150,7 @@ bike network map
 collision map
 
 bike share routes map 
-- could be constrained to just the animation or could show 
+- could be constrained to just the animation?
 
 **Basemap layers**:
 <!-- probably will build this out in mapbox studio -->
