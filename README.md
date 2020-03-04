@@ -234,7 +234,7 @@ If insights inferred from spatial and temporal analysis of datasets can inform d
 - [City of New Orleans Data Portal]()
 - [Bike Easy NOLA](http://bikeeasy.org/)
 - [Regional Planning Commission](norpc.org)
-
+- [DPW bicyling site](https://www.nola.gov/dpw/bicycling/)
 - [NOLA traffic camera citations 2008-2019](https://data.nola.gov/Public-Safety-and-Preparedness/Traffic-Camera-Citations/va3u-jspg)
 
 
