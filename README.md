@@ -6,7 +6,7 @@
 
 This project is intended to be series of maps that will overview the bike network and allow for exploration of bike-related datasets of potential interest to the cycling community, public safety officials & policymakers, neighborhood associations and citizens.
 
-maps & exploratory tools
+#### Maps & Exploratory tools
 
 - generate interactive maps of bicycle networks, past and present in the Greater New Orleans metro area.
 - explore traffic safety data & generate meaningful insights and data visualizations
@@ -17,7 +17,7 @@ maps & exploratory tools
 
 I want to design exploratory and descriptive interactive maps that increase bicycle safety ... because I want others to have greater awareness of their environment when they travel by bike in order that everyone can be prepared.
 
-## **user needs scenario**
+<!-- ## **user needs scenario** -->
 
 TBD
 
@@ -118,6 +118,17 @@ As all bikes are gps-tracked, there is _alot_ of route data being generated that
 * streetlight coverage?
 * correlation to proximity to traffic cameras? -->
 
+
+<!-- 
+- bike network status? 
+- physical infrastructure 
+- accident history?
+- streetlight coverage?
+- correlation to proximity to traffic cameras? 
+ -->
+
+
+
 ### **Anticipated queries and other data thoughts:**
 
 #### how to explore new orleans bicycling with data analysis?
@@ -159,14 +170,19 @@ Variety of maps and dataset explorations:
 
 **Technology Stack:**
 
+
 leaflet
-mapbox js
+mapbox gl js
 mapbox studio
 
 torque.js
 turf.js
 
 hosting:
+pySAL - spatial analysis 
+
+
+hosting: 
 
 **Basemap layers**:
 
@@ -215,10 +231,19 @@ _prominent disclaimer:_ use this data and related analysis at your own risk!
 City of New Orleans Datasets:
 
 - [NOLA traffic camera citations 2008-2019](https://data.nola.gov/Public-Safety-and-Preparedness/Traffic-Camera-Citations/va3u-jspg)
+
+
 - [bike lanes]()
 - [bike share hubs]()
 - [bike share service area]()
 - [neighborhoods]()
+
+- [City of New Orleans Data Portal]()
+- [Bike Easy NOLA](http://bikeeasy.org/)
+- [Regional Planning Commission](norpc.org)
+- [DPW bicyling site](https://www.nola.gov/dpw/bicycling/)
+- [NOLA traffic camera citations 2008-2019](https://data.nola.gov/Public-Safety-and-Preparedness/Traffic-Camera-Citations/va3u-jspg)
+
 
 <!-- ## Connection to Traffic Camera Citations 2008-2019?
 
