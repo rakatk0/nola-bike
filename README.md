@@ -7,26 +7,37 @@
 This project is intended to be series of maps that will overview the bike network and allow for exploration of bike-related datasets of potential interest to the cycling community, public safety officials & policymakers, neighborhood associations and citizens.
 
 #### Maps & Exploratory tools
+Two maps: 
+1. wayfinding network map of New Orleans metro including overview of the Louisiana Bootlace trail
+2. exploratory hexbin map (traffic incidents, bike thefts, bikeshare data)
 
+#### 1
 - generate interactive maps of bicycle networks, past and present in the Greater New Orleans metro area.
+#### 2
 - explore traffic safety data & generate meaningful insights and data visualizations
 - explore police incident reports for bike-thefts
 - exploratory toolset to peruse city-wide bike-share program datasets & generate meaningful insights, communicated through interactive data visualizations. 
+#### **map objectives**
 
 
+<!-- interactive layered map with custom base map -->
 
+<!-- **complete streets map?**:
+interactive map exploring existing and proposed conditions. Complete Streets is an urban planning initiative that seeks to make streets safer and more friendly to pedestrians and cyclists through various adjustments and interventions in streetscapes.   -->
 
-## **map objectives**
 
 <!-- ### ```I want to design exploratory and descriptive interactive maps that increase bicycle safety ... because I want others to have greater awareness of their environment when they travel by bike in order that everyone can be prepared.``` -->
 
+## **user needs scenario**
 
 
 
-<!-- ## **user needs scenario** -->
 
 
 ## **data sources**
+
+*** NOTE ON DATA ***
+Still working to chase down a variety of datasets (traffic incidents, bikeshare data, regional planning commission data) from a variety of sources!!! 
 
 #### **Existing bicycle infrastructure**: 
 city maintained lanes - [City of New Orleans Open Data Portal](https://data.nola.gov/Transportation-and-Infrastructure/Bike-Lanes/8npz-j6vy)
@@ -40,24 +51,26 @@ This map currently exists in a pdf format from the RPC's website and requires di
 [St. Tammany Parish Bike Network]()
 [Louisiana Bootlace Trail]()
 
-interactive layered map with custom base map
-
-**complete streets map**:
-interactive map exploring existing and proposed conditions. Complete Streets is an urban planning initiative that seeks to make streets safer and more friendly to pedestrians and cyclists through various adjustments and interventions in streetscapes.  
 
 
 **Bike layers**: 
 
-- amenities (points)
+- amenities 
+    - [bike lanes]
     - [parking racks/locations](https://data.nola.gov/Transportation-and-Infrastructure/Bicycle-Parking-Locations/atfa-cmev)
-    - bike repair stations 
     - [bike share stations](https://data.nola.gov/Transportation-and-Infrastructure/Bike-Share-Stations/3het-ycdr)
-    - bike shops/non-profits
-- transit connections (lines)
+    - 
+    
+- user-generated amenities (crowd-sourced dataset)
+    - bike repair stations
+    - pro-tips
+
+
+<!-- - transit connections (lines)
     - transit stops
     - ferry landings
-    - train station
-- hazards & conditions (points, lines and polygons)
+    - train stations -->
+<!-- - hazards & conditions (points, lines and polygons)
     - [streetlights](https://data.nola.gov/dataset/Streetlights/ut7r-kcda)
     - pavement conditions
     - railroad and streetcar tracks
@@ -65,7 +78,7 @@ interactive map exploring existing and proposed conditions. Complete Streets is 
     - construction alerts
         - [Department of Public Works](https://www.nola.gov/dpw/projects/all/)
         - [Sewer & Water Board]()
-        - [LA DOT]()
+        - [LA DOT]() -->
 
 <!-- *other connections:* integrate 3rd party crowdsource app api via Bike Easy?  -->
 
@@ -80,28 +93,23 @@ This dataset is typical of what most states maintain, and can be used to isolate
 
 <!-- access to data is pending -->
 
-where are most dangerous intersections at what times of day?
+<!-- where are most dangerous intersections at what times of day?
 is there a streetlight correlation?
-is there a bike network correlation? 
+is there a bike network correlation?  -->
 
 
 ## **Bike-Share Program  Data**
 ### **Blue Bikes Usage Data**: 
-
-_Points_: Bike Share Hubs
-
-_Polygons_: Service Area, Other areas
-
-_Lines_: Routes
+** *disclaimer:* This data may not be available.  Access is pending. 
 
 As all bikes are gps-tracked, there is *alot* of route data being generated that could be analyzed for insights. 
 
-<!-- ** *disclaimer:* This data may not be available.  Access is pending.  Freedom of Information requests may help gain access ** -->
+
 
 **wrangling and analysis** 
 <!-- use bluebike data to figure out *where* to look.. -->
 
-- does this dataset represent the behavior of all cyclists in new orleans, or just a subset of those using bike share programs?  
+<!-- - does this dataset represent the behavior of all cyclists in new orleans, or just a subset of those using bike share programs?  
 - What is the typical user of New Orleans bikeshare program?
 - What sort of patterns of movement exist around certain neighborhoods and districts, at certain times?
 - Bike share network users? tourist vs local? where do rides originate and end? can this be determined? 
@@ -114,9 +122,7 @@ As all bikes are gps-tracked, there is *alot* of route data being generated that
 - What is the typical user of New Orleans bikeshare program?
 - What sort of patterns of movement exist around certain neighborhoods and districts, at certain times?
 - Ask the crowd: what's the the best way to get upriver/downriver,riverside/lakeside from user's location) 
-- look at the beaucoup festivals/parades and impacts of weather and road construction impacts on routes taken could be interesting...
-
-
+- look at the beaucoup festivals/parades and impacts of weather and road construction impacts on routes taken could be interesting... -->
 
 <!-- 
 - bike network status? 
@@ -126,13 +132,10 @@ As all bikes are gps-tracked, there is *alot* of route data being generated that
 - correlation to proximity to traffic cameras? 
  -->
 
-
-
 ### **Anticipated queries and other data thoughts:**
 #### how to explore new orleans bicycling with data analysis?
 
 do these datasets characterize the typical new orleans bike network user?  
-
 
 - flatness?...average grade change on ride vs other cities...bring in elevation data to visualize cross sections? 
 - compact grids .... always a parallel alternative? A,B,C routes...look at similar trips with different routes...where does this breakout of bike network?
@@ -153,36 +156,49 @@ Maps could help to explain these efforts to residents, and expand awareness of a
 
 Variety of maps and dataset explorations:
 
-1. bike network map
-- relatively static
-- smaller datasets
+1. Greater New Orleans Bike Map
+    - includesbootlace network map
+    - relatively static
+    - smaller datasets
 
-2. collision map
-- will reference a static dataset
-- perform analysis browser-side?
-- large dataset (>30mb)
+2. Hexmaps
+    - incident/collision
+        - will reference a static dataset
+        - perform analysis browser-side?
+        - large dataset (>30mb)
+    - bike share usage maps 
+        - parse routes as tracings
+        - watch animation of routes
+        - highlight high traffic spots
+        - potentially very large dataset (>5gb)
+    - police report analysis
+        - bicycle theft
+        - other bicycle related reports
 
-3. bike share usage maps 
-- parse routes as tracings
-- watch animation of routes
-- highlight high traffic spots
-- potentially very large dataset (>5gb)
 
 
 ### **Technology Stack:**
 
+conda
+jupyter
+geopandas
 
-leaflet
+
+
+
+
+<!-- leaflet
 mapbox gl js
 mapbox studio
 
 torque.js
 turf.js
 
+
 pySAL - spatial analysis 
 
 
-hosting: 
+hosting:  -->
 
 **Basemap layers**:
 <!-- probably will build this out in mapbox studio -->
@@ -222,20 +238,24 @@ If insights inferred from spatial and temporal analysis of datasets can inform d
 
 
 
-## Resources
+## Resources & Datasets
 
 
 
-- [bike lanes]()
-- [bike share hubs]()
+- [bike lanes](https://data.nola.gov/Transportation-and-Infrastructure/Bike-Lanes/8npz-j6vy)
+- [bike share stations](https://data.nola.gov/Transportation-and-Infrastructure/Bike-Share-Stations/3het-ycdr)
+- [bike parking locations](https://data.nola.gov/Transportation-and-Infrastructure/Bicycle-Parking-Locations/atfa-cmev)
+
 - [bike share service area]()
 - [neighborhoods]()
 
-- [City of New Orleans Data Portal]()
-- [Bike Easy NOLA](http://bikeeasy.org/)
+- [City of New Orleans Data Portal](https://datadriven.nola.gov/home/)
 - [Regional Planning Commission](norpc.org)
 
+- [Bike Easy NOLA](http://bikeeasy.org/)
+
 - [NOLA traffic camera citations 2008-2019](https://data.nola.gov/Public-Safety-and-Preparedness/Traffic-Camera-Citations/va3u-jspg)
+- [NOPD 2019 police report](https://data.nola.gov/Public-Safety-and-Preparedness/Electronic-Police-Report-2019/mm32-zkg7/data)
 
 
 <!-- ## Connection to Traffic Camera Citations 2008-2019?
